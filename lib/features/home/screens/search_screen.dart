@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mail_finder/features/sidebar/widgets/sidebar.dart';
+import 'package:mail_finder/features/chat/components/chat_box.dart';
+import 'package:mail_finder/features/sidebar/components/sidebar.dart';
 
 class SearchScreen extends StatelessWidget {
   const SearchScreen({super.key});
@@ -9,20 +10,19 @@ class SearchScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Test"),
+        backgroundColor: Colors.purple.shade100,
       ),
-      body: Container(
-        child: Row(
-          children: [
-            const Flexible(
-              flex: 2,
-              child: Sidebar(),
-            ),
-            Flexible(
-              flex: 7,
-              child: Container(),
-            )
-          ],
-        ),
+      body: const Row(
+        children: [
+          Flexible(
+            flex: 2,
+            child: Sidebar(),
+          ),
+          Flexible(
+            flex: 7,
+            child: ChatBox(),
+          )
+        ],
       ),
     );
   }
