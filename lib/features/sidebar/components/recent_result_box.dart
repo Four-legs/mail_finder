@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:mail_finder/common/widgets/titled_divider.dart';
 import 'package:mail_finder/constants/sizes.dart';
 import 'package:mail_finder/features/sidebar/widgets/recent_result_item.dart';
-import 'package:mail_finder/models/search_result_summary_model.dart';
 
 List<String> SampleQueryList = [
   "2024년 11월 08일 회의",
